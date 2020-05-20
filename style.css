@@ -54,13 +54,13 @@ h4 {
   height: 50px;
   padding-top: 10px;
 }
-
 header a {
-  color: white;
   text-decoration: none;
+  color: white;
 }
 
-.play {
+h4 a:hover {
+  border-bottom: solid 1px white;
 }
 
 nav {
