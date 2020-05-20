@@ -18,7 +18,7 @@ header {
   background-image: url(images/main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -620px;
+  background-position: center -640px;
   width: 1440px;
   height: 688px;
 }
@@ -35,7 +35,7 @@ h2 {
 
 h1 {
   font-size: 54px;
-  margin-top: 255px;
+  margin-top: 240px;
 }
 
 h2 {
@@ -64,16 +64,65 @@ h4 a:hover {
 }
 
 nav {
-  width: 800px;
-  height: 50px;
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 980px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #707070;
   border: solid 1px aqua;
   position: absolute;
   top: 9%;
   z-index: 1;
 }
+
+nav ul {
+  margin-top: 15px;
+  width: 750px;
+  padding: 5px;
+  border: solid 2px #ccc;
+}
+
+nav ul li {
+  display: inline;
+  text-align: center;
+  margin: 0 25px;
+  border: solid 1px black;
+}
+
+nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+nav li:hover {
+  text-decoration-color: red;
+}
+
+.logo {
+  display: inline-block;
+  background-image: url(images/apple.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left 4px;
+  width: 20px;
+  height: 20px;
+}
+
+input {
+  display: inline-block;
+  border-radius: 12px;
+  height: 19px;
+  padding: 2px 18px 1px 22px;
+  background-color: #707070;
+}
+
 .thumbnails {
   display: flex;
+  margin-top: -12px;
 }
 
 .thumb-1,
