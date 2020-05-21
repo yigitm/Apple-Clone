@@ -68,14 +68,14 @@ nav {
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: 9fr;
   align-items: center;
-  justify-items: start;
-  width: 980px;
-  height: 36px;
+  justify-items: center;
+  width: 1000px;
+  height: 38px;
   border-radius: 4px;
-  background-color: #707070;
   position: absolute;
   top: 9%;
-  z-index: 1;
+  z-index: 2;
+  border: solid 1px red;
 }
 
 nav a {
@@ -83,24 +83,42 @@ nav a {
   font-size: 12px;
   text-decoration: none;
   color: white;
+  padding: 12px 0px 0px 24px;
+  width: 105px;
+  height: 36px;
+  border-right: groove 1px #474545;
+}
+
+nav a:not(.logo) {
+  background-color: #707070;
+}
+
+nav a:hover {
+  background-color: black;
 }
 
 .logo {
-  display: list-item;
-  list-style-type: none;
-  background-image: url(images/apple.png);
+  background: url(images/apple.png), #707070;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-left: 15px;
-  width: 20px;
-  height: 20px;
+  background-size: 3vh 3vh;
+  background-position: center;
 }
 
 input {
   border-radius: 12px;
   height: 19px;
-  background-color: #707070;
-  margin-right: 15px;
+  margin: 0 16px;
+  background: url(images/search-white.svg), #707070;
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+}
+
+input:hover {
+  background: url(images/search-dark.svg), white;
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+  margin: 8px 8px;
+  width: 140px;
 }
 
 .thumbnails {
