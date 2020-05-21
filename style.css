@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin-top: 0;
+  margin: 0;
 }
 .wrapper {
   display: grid;
@@ -67,11 +67,12 @@ nav {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: 9fr;
+  grid-column: 1;
   align-items: center;
   justify-items: center;
-  width: 1000px;
+  width: 70%;
   height: 38px;
-  border: groove 1px #707070;
+  border: solid 2px #707070;
   border-radius: 4px;
   position: absolute;
   top: 9%;
@@ -82,9 +83,10 @@ nav a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   text-decoration: none;
-  padding: 12px 0px 0px 24px;
+  padding: 12px 0px 0px 22px;
   color: white;
-  width: 105px;
+  width: 100%;
+  border-right: groove 1px #474545;
 }
 
 nav a:hover {
@@ -102,7 +104,6 @@ nav a,
 form {
   height: 36px;
   background-color: #707070;
-  border-right: groove 1px #474545;
 }
 
 input {
