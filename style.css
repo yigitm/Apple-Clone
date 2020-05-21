@@ -90,20 +90,23 @@ nav a {
 }
 
 nav a:hover {
-  background-color: black;
+  background: radial-gradient(rgb(58, 56, 56), rgb(94, 92, 92));
 }
 
 .logo {
+  content: url(images/apple.png);
   background-image: url(images/apple.png);
   background-repeat: no-repeat;
-  background-size: 3vh 3vh;
+  background-size: contain;
   background-position: center;
+  height: 36px;
+  margin: -12px 10px;
 }
 
 nav a,
 form {
   height: 36px;
-  background-color: #707070;
+  background: radial-gradient(rgb(85, 84, 84) 2%, #707070);
 }
 
 input {
