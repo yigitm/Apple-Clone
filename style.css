@@ -28,18 +28,19 @@ h2 {
   font-family: "Quicksand", sans-serif;
   font: lighter;
   font-weight: 100;
-  line-height: 44px;
   text-align: center;
   width: 50%;
 }
 
 h1 {
   font-size: 54px;
-  margin-top: 240px;
+  margin-top: 228px;
 }
 
 h2 {
   font-size: 26px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 h4 {
@@ -72,7 +73,7 @@ nav {
   justify-items: center;
   width: 70%;
   height: 38px;
-  border: solid 2px #707070;
+  border: double 1px #707070;
   border-radius: 4px;
   position: absolute;
   top: 9%;
@@ -98,8 +99,8 @@ nav a:hover {
 }
 
 .logo {
-  content: url(images/apple.png);
-  background-image: url(images/apple.png);
+  content: url(images/apple2.png);
+  background-image: url(images/apple2.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
