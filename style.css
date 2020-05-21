@@ -79,34 +79,38 @@ nav {
   z-index: 2;
 }
 
-nav a {
+nav a:not(#align) {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   text-decoration: none;
   padding: 12px 0px 0px 22px;
   color: white;
   width: 100%;
-  border-right: groove 1px #474545;
+  border-right: double 1px #8d8c8c;
 }
 
 nav a:hover {
-  background: radial-gradient(rgb(58, 56, 56), rgb(94, 92, 92));
+  background: linear-gradient(
+    rgb(97, 96, 96),
+    rgb(51, 50, 50),
+    rgb(49, 49, 49)
+  );
 }
 
 .logo {
   content: url(images/apple.png);
   background-image: url(images/apple.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 50%;
   background-position: center;
-  height: 36px;
-  margin: -12px 10px;
+  height: 20px;
+  margin: -5px 20px;
 }
 
 nav a,
 form {
   height: 36px;
-  background: radial-gradient(rgb(85, 84, 84) 2%, #707070);
+  background: linear-gradient(rgb(158, 157, 157), rgb(97, 94, 94), #8d8c8c);
 }
 
 input {
