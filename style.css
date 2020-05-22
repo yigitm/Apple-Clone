@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -10,6 +11,7 @@
   justify-items: center;
   position: relative;
 }
+
 header {
   position: relative;
   display: flex;
@@ -26,7 +28,7 @@ header {
 h1,
 h2 {
   font-family: "Quicksand", sans-serif;
-  font: lighter;
+  font-weight: lighter;
   font-weight: 100;
   text-align: center;
   width: 50%;
@@ -61,10 +63,6 @@ header a {
   color: white;
 }
 
-h4 a:hover {
-  border-bottom: solid 1px white;
-}
-
 nav {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -81,14 +79,23 @@ nav {
   z-index: 2;
 }
 
-nav a:not(#align) {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+nav a,
+form {
+  height: 36px;
+  background: linear-gradient(rgb(158, 157, 157), rgb(97, 94, 94), #8d8c8c);
+}
+
+footer a {
   text-decoration: none;
-  padding: 12px 0px 0px 22px;
-  color: white;
-  width: 100%;
-  border-right: double 1px #8d8c8c;
+  color: #08c;
+}
+
+h4 a:hover {
+  border-bottom: solid 1px white;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 nav a:hover {
@@ -99,6 +106,16 @@ nav a:hover {
   );
 }
 
+nav a:not(#align) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 12px 1px 1px 22px;
+  color: white;
+  width: 100%;
+  border-right: double 1px #8d8c8c;
+}
+
 .logo {
   content: url(images/apple2.png);
   background-image: url(images/apple2.png);
@@ -107,12 +124,6 @@ nav a:hover {
   background-position: center;
   height: 20px;
   margin: -5px 20px;
-}
-
-nav a,
-form {
-  height: 36px;
-  background: linear-gradient(rgb(158, 157, 157), rgb(97, 94, 94), #8d8c8c);
 }
 
 input {
@@ -151,15 +162,19 @@ input:focus {
   width: 360px;
   height: 200px;
 }
+
 .thumb-1 {
   background-image: url(images/thumb-1.jpg);
 }
+
 .thumb-2 {
   background-image: url(images/thumb-2.jpg);
 }
+
 .thumb-3 {
   background-image: url(images/thumb-3.jpg);
 }
+
 .thumb-4 {
   background-image: url(images/thumb-4.jpg);
 }
@@ -172,8 +187,8 @@ footer {
 
 footer li,
 p {
+  font-weight: lighter;
   font-family: "Quicksand", sans-serif;
-  font: lighter;
   font-size: 11px;
 }
 
@@ -197,18 +212,11 @@ footer ul li:not(.flag-border) {
   display: block;
   position: relative;
 }
+
 .sub-text {
   display: flex;
 }
 
-footer a {
-  text-decoration: none;
-  color: #08c;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
 .terms-border {
   border-right: 1px solid #ccc;
   padding: 3px;
