@@ -99,7 +99,8 @@ footer a:hover {
 }
 
 nav a:hover {
-  background: linear-gradient(
+  background:
+    linear-gradient(
     rgb(97, 96, 96),
     rgb(51, 50, 50),
     rgb(49, 49, 49)
