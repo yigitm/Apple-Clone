@@ -4,58 +4,58 @@
 }
 
 .wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: repeat(1fr 1fr 1fr);
   grid-gap: 6px;
   justify-items: center;
-  position: relative;
 }
 
 header {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 1440px;
+  height: 540px;
   align-items: center;
   background-image: url(images/main.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center -776px;
-  width: 1440px;
-  height: 540px;
+  background-size: cover;
 }
 
 h1,
 h2 {
+  width: 50%;
   font-family: "Quicksand", sans-serif;
   font-weight: lighter;
   font-weight: 100;
   text-align: center;
-  width: 50%;
 }
 
 h1 {
-  font-size: 54px;
   margin-top: 158px;
+  font-size: 54px;
 }
 
 h2 {
-  font-size: 26px;
   margin-top: 25px;
   margin-bottom: 25px;
+  font-size: 26px;
 }
 
 h4 {
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  font-size: 20px;
-  background-image: url(images/play.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 490px;
   width: 550px;
   height: 50px;
   padding-top: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-image: url(images/play.png);
+  background-repeat: no-repeat;
+  background-position: 490px;
+  background-size: contain;
 }
 
 header a {
@@ -64,19 +64,19 @@ header a {
 }
 
 nav {
+  position: absolute;
+  top: 10.3%;
+  z-index: 2;
   display: grid;
+  width: 70%;
+  height: 38px;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: 9fr;
   grid-column: 1;
   align-items: center;
   justify-items: center;
-  width: 70%;
-  height: 38px;
   border: double 1px #707070;
   border-radius: 4px;
-  position: absolute;
-  top: 10.3%;
-  z-index: 2;
 }
 
 nav a,
@@ -99,53 +99,51 @@ footer a:hover {
 }
 
 nav a:hover {
-  background:
-    linear-gradient(
-      rgb(97, 96, 96),
-      rgb(51, 50, 50),
-      rgb(49, 49, 49)
-    );
+  background: linear-gradient(
+    rgb(97, 96, 96),
+    rgb(51, 50, 50),
+    rgb(49, 49, 49)
+  );
 }
 
 nav a:not(#align) {
+  width: 100%;
+  padding: 12px 1px 1px 22px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   text-decoration: none;
-  padding: 12px 1px 1px 22px;
   color: white;
-  width: 100%;
   border-right: double 1px #8d8c8c;
 }
 
 .logo {
+  height: 20px;
+  margin: -5px 20px;
   content: url(images/apple2.png);
   background-image: url(images/apple2.png);
   background-repeat: no-repeat;
-  background-size: 50%;
   background-position: center;
-  height: 20px;
-  margin: -5px 20px;
+  background-size: 50%;
 }
 
 input {
-  border-radius: 12px;
+  width: 100px;
   height: 19px;
+  padding: 5px 5px 5px 5px;
   margin: 10px 29px;
   background: url(images/search-white.svg), #707070;
   background-repeat: no-repeat, no-repeat;
   background-position: 2px 2px;
-  padding: 5px 5px 5px 5px;
-  width: 100px;
-  cursor: text;
+  border-radius: 12px;
 }
 
 input:focus {
+  width: 140px;
+  padding-left: 20px;
+  margin: 8px 9px;
   background: url(images/search-dark.svg), white;
   background-repeat: no-repeat, no-repeat;
   background-position: 2px 2px;
-  margin: 8px 9px;
-  width: 140px;
-  padding-left: 20px;
 }
 
 .thumbnails {
@@ -157,11 +155,11 @@ input:focus {
 .thumb-2,
 .thumb-3,
 .thumb-4 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 1px 0;
   width: 360px;
   height: 200px;
+  background-repeat: no-repeat;
+  background-position: 1px 0;
+  background-size: cover;
 }
 
 .thumb-1 {
@@ -182,15 +180,15 @@ input:focus {
 
 footer {
   display: flex;
-  align-items: baseline;
   padding-top: 6px;
+  align-items: baseline;
 }
 
 footer li,
 p {
-  font-weight: lighter;
   font-family: "Quicksand", sans-serif;
   font-size: 11px;
+  font-weight: lighter;
 }
 
 footer ul li {
@@ -199,9 +197,9 @@ footer ul li {
 }
 
 footer ul li:not(.flag-border) {
-  border-right: 1px solid #ccc;
   padding-right: 3px;
   padding-left: 3px;
+  border-right: 1px solid #ccc;
 }
 
 .footer-left {
@@ -210,8 +208,8 @@ footer ul li:not(.flag-border) {
 }
 
 .footer-left p {
-  display: block;
   position: relative;
+  display: block;
 }
 
 .sub-text {
@@ -219,6 +217,6 @@ footer ul li:not(.flag-border) {
 }
 
 .terms-border {
-  border-right: 1px solid #ccc;
   padding: 3px;
+  border-right: 1px solid #ccc;
 }
