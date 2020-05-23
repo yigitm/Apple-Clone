@@ -59,8 +59,8 @@ h4 {
   text-align: center;
   background-image: url(images/play.png);
   background-repeat: no-repeat;
-  background-position: 490px;
-  background-size: contain;
+  background-position: 500px;
+  background-size: 50px 30px;
 }
 
 header a {
@@ -190,7 +190,7 @@ input:optional {
 footer {
   display: flex;
   padding-top: 6px;
-  align-items: baseline;
+  align-items: center;
 }
 
 footer li,
@@ -200,12 +200,12 @@ p {
   font-weight: lighter;
 }
 
-footer ul li {
+footer ul li:not(.flag-border) {
   display: inline-block;
   list-style-type: none;
 }
 
-footer ul li:not(.flag-border) {
+footer ul li {
   padding-right: 3px;
   padding-left: 3px;
   border-right: 1px solid #ccc;
@@ -228,4 +228,9 @@ footer ul li:not(.flag-border) {
 .terms-border {
   padding: 3px;
   border-right: 1px solid #ccc;
+}
+
+.flag {
+  float: right;
+  margin: 2px 5px;
 }
