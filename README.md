@@ -29,7 +29,7 @@ This landing page is designed using elements aligned with a combination of all t
 
 ## Live Demo :
 
-[Project Live Link](https://raw.githack.com/Georjane/New-York-Times-Article/feature_NY_Times_Article/index.html)
+[Project Live Link](https://raw.githack.com/yigitm/Apple-Clone/Landing-Page/index.html)
 
 ## Authors :
 
