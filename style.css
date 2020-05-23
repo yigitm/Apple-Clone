@@ -104,8 +104,12 @@ footer a:hover {
 }
 
 nav a:hover {
-  background: linear-gradient
-    (rgb(97, 96, 96), rgb(51, 50, 50), rgb(49, 49, 49));
+  background: 
+    linear-gradient(
+      rgb(97, 96, 96),
+      rgb(51, 50, 50),
+      rgb(49, 49, 49)
+    );
 }
 
 nav a:not(#align) {
